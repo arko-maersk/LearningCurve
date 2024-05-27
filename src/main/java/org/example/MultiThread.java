@@ -9,7 +9,8 @@ public MultiThread(int threadNum) {
 }
     public void run(){
         for (int i=0;i<5;i++){
-            System.out.println(i + " from thread number:- "+threadNum);
+            System.out.println(i + " from thread number:- "+threadNum+" name of thread is:-"+ Thread.currentThread().getName());
+
         }
         try{
             Thread.sleep(1000);
